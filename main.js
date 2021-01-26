@@ -8,11 +8,16 @@ console.log(b.lastElementChild.textContent)
 
 //--3--
 let c = document.getElementsByTagName('p')[0]
-let d = c.style.textTransform = "uppercase"
-
+let d = c.textContent.toUpperCase()
+console.log(d)
 //--4--
 let aar = document.getElementsByTagName('li')
+
 console.log(aar.length)
-for (let i = 0; i < aar.length; i++) {
-    console.log(document.getElementsByTagName('li')[i].textContent)
-}
+
+var arr2 = Array.from(aar)
+console.log(arr2)
+
+arr2.forEach(element => {
+    console.log(element)
+});
